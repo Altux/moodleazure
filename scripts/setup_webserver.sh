@@ -683,3 +683,5 @@ EOF
   service varnish restart
 
 }  > /tmp/setup.log
+
+. ./set-french.sh
