@@ -50,7 +50,7 @@ echo $phpVersion          >> /tmp/vars.txt
  sudo apt-get update > /dev/null 2>&1
  
 sudo apt-get -y install unoconv 
-sudo apt-get -y install ghostcript
+sudo apt-get -y install ghostscript
 
 check_fileServerType_param $fileServerType
 
