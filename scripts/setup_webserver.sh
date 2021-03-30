@@ -49,7 +49,8 @@ echo $phpVersion          >> /tmp/vars.txt
  sudo add-apt-repository ppa:ondrej/php -y > /dev/null 2>&1
  sudo apt-get update > /dev/null 2>&1
  
- sudo apt-get install unoconv ghostcript
+sudo apt-get -y install unoconv 
+sudo apt-get -y install ghostcript
 
 check_fileServerType_param $fileServerType
 
