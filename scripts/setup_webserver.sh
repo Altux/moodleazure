@@ -48,6 +48,8 @@ echo $phpVersion          >> /tmp/vars.txt
 # sudo dpkg --configure –a
  sudo add-apt-repository ppa:ondrej/php -y > /dev/null 2>&1
  sudo apt-get update > /dev/null 2>&1
+ 
+ sudo apt-get install unoconv ghostcript
 
 check_fileServerType_param $fileServerType
 
