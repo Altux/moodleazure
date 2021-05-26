@@ -107,7 +107,7 @@ check_fileServerType_param $fileServerType
     php$phpVersion-xml \
     php$phpVersion-bz2 \
     unoconv \
-    ghostcript \
+    ghostscript \
     php$phpVersion-ldap
 
   # install azcopy
