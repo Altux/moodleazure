@@ -51,6 +51,7 @@ echo $phpVersion          >> /tmp/vars.txt
  
 sudo apt-get -y install unoconv 
 sudo apt-get -y install ghostscript
+sudo apt-get -y install ntp
 
 check_fileServerType_param $fileServerType
 
