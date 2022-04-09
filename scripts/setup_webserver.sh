@@ -53,7 +53,7 @@ sudo apt-get -y install unoconv
 sudo apt-get -y install ghostscript
 sudo apt-get -y install ntp
 
-systemctl restart ntp
+sudo systemctl restart ntp
 
 check_fileServerType_param $fileServerType
 
