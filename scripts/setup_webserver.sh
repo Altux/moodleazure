@@ -52,8 +52,12 @@ echo $phpVersion          >> /tmp/vars.txt
 sudo apt-get -y install unoconv 
 sudo apt-get -y install ghostscript
 
-sudo timedatectl set-ntp no
-sudo apt-get -y install ntp
+sudo apt-get -y install chrony
+sudo systemctl start chronyd
+sudo systemctl enable chronyd
+sudo /bin/sh -c 'echo  refclock PHC /dev/ptp_hyperv poll 3 dpoll -2 offset 0 >> /etc/chrony/chrony.conf'
+sudo timedatectl set-ntp yes
+sudo systemctl restart chronyd
 
 check_fileServerType_param $fileServerType
 
