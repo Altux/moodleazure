@@ -108,6 +108,8 @@ check_fileServerType_param $fileServerType
     php$phpVersion-bz2 \
     unoconv \
     ghostscript \
+    gnuplot \
+    maxima \
     php$phpVersion-ldap
 
   # install azcopy
